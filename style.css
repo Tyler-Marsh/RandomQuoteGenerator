@@ -1,0 +1,87 @@
+.container {
+  width: 65%;
+  margin: 0 auto;
+  font-family:'Gotu', sans-serif;
+}
+
+.quoteBox {
+  margin-top: 75px;
+  padding: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F4FFFD;
+}
+
+.quote {
+  color: #1F2D3D;
+  font-size: 33px;
+  opacity: .5;
+}
+
+
+.flexbuttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+}
+
+.buttonText {
+  font-weight: 500;
+  font-size: 20px;
+  color: #1F2D3D;
+  display:inline;
+  opacity: 1;
+}
+
+.flexbuttons button {
+  background-color: #F4FFFD;
+  border: 3px solid #F9DC5C;
+  border-radius: 3px;
+  margin-right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #F9DC5C;
+  padding: 10px;
+  font-family:'Gotu', sans-serif;
+}
+
+.flexbuttons button:hover {
+  background-color: #F9DC5C;
+  color: #F4FFFD;
+  font-weight: 700;
+  transition: ease-in-out .3s;
+}
+
+.quoteAttributions ul li {
+  display: inline;
+  color: #1F2D3D;
+  font-size: 12px;
+  opacity: .4;
+}
+
+li {
+  display: inline;
+}
+
+.quoteAttributions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+#go {
+  color: #ED254E;
+  font-weight: 700;
+}
+
+#hide {
+  display: none;
+}

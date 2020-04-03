@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1 style="color: #ED254E">Random Quotes</h1>
+  </header>
+  <div id="errorParent">
+  <div class="quoteBox" id="before">
+    <div id="displayedQuote" class="quote">
+      
+        <!-- this is to insert errors for the previous quote feature -->
+        
+    <p>"I love you like Kanye loves Kanye..."</p>
+    
+  </div>
+    <div class="quoteAttributions">
+      <ul style>
+        <li id="newAuthor">Kanye West,</li>
+        <li id="newSource">The Life of Pablo,</li>
+        <li id="newDate">2016</li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="flexbuttons">
+    <button><p class="buttonText" id="getRandomQuote">Random Quote</p></button>
+    <button id="add"><p class="buttonText">Add your own</p></button>
+    <button><p class="buttonText" id="previousQuote">Go back a quote</p></button>
+  </div>
+  <form style="display: hidden; margin-top: 20px;" id="hide" action="#" onsubmit="submitNewQuote(event)">
+    <p>Quote</p><input type="text" class="hidden" default ="quote" id="formQuote"> </input>
+    <hr>
+    <p >Author</p><input type="text" class="hidden" default ="author" id="formAuthor"> </input>
+    <hr>
+    <p>Source</p><input type="text" class="hidden" default ="source" id="formSource"> </input>
+    <hr>
+    <p>Date</p><input type="text" class="hidden" default ="date" id="formDate"> </input>
+    <hr>
+    <div class="flexbuttons">
+    <button type="submit"><p class="buttonText" id="go">Submit</p></button>
+  </div>
+  </form>
+</div>
+  <div style="margin-top: 130px;">
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
